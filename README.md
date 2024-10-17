@@ -12,7 +12,7 @@ composer require mateffy/pan-analytics-viewer
 
 To add the popups to your app, all you have to do is include the `pan-analytics::viewer` component in your blade template:
 
-```php
+```bladehtml
 // Make sure to verify who has access! 
 // Including this component will expose your analytics data!
 
