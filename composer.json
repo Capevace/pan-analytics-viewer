@@ -1,0 +1,27 @@
+{
+    "name": "mateffy/pan-analytics-viewer",
+    "description": "View your analytics directly where you collect them.",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lukas Mateffy",
+            "email": "hey@mateffy.me"
+        }
+    ],
+    "require": {
+        "spatie/laravel-package-tools": "^1.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mateffy\\PanAnalyticsViewer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mateffy\\PanAnalyticsViewer\\PanAnalyticsViewerServiceProvider"
+            ]
+        }
+    }
+}
