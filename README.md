@@ -13,8 +13,8 @@ composer require mateffy/pan-analytics-viewer
 To add the popups to your app, all you have to do is include the `pan-analytics::viewer` component in your blade template:
 
 ```blade
-// Make sure to verify who has access! 
-// Including this component will expose your analytics data!
+{{--    Make sure to verify who has access! 
+        Including this component will expose your analytics data! --}}
 
 @if (auth()->user()?->email === 'admin@example.com')
     <x-pan-analytics::viewer />
