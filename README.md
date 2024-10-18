@@ -10,12 +10,15 @@ A tiny package to view your [panphp/pan](https://github.com/panphp/pan) analytic
         
 </details>
 
+<br>
 
 ## Installation
 
 ```bash
 composer require mateffy/pan-analytics-viewer
 ```
+
+<br>
 
 ## Usage
 
@@ -74,6 +77,8 @@ So, make sure to only let users see this component if they have the necessary pe
 @endif
 ```
 
+<br>
+
 ## Configuration
 
 You can publish the config file with:
@@ -93,6 +98,8 @@ return [
 ### Endpoint
 
 You can change the URL that the analytics are being exposed on by changing the `PAN_ANALYTICS_ENDPOINT` environment variable or customizing the `endpoint` config key. The default URL is `example.com/pan/viewer`.
+
+<br>
 
 ## Changelog
 
