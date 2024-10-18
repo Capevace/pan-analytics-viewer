@@ -81,7 +81,7 @@ So, make sure to only let users see this component if they have the necessary pe
 
 ### Tippy.js
 
-This package uses [Tippy.js](https://github.com/atomiks/tippyjs) to create the popups. `tippy.js` is included via `unpkg.com` like this:
+This package uses [Tippy.js](https://github.com/atomiks/tippyjs) to create the popups. `tippy.js` is included via `unpkg.com` like this, but only when the component is rendered:
 
 ```html
 <script src="https://unpkg.com/@popperjs/core@2"></script>
