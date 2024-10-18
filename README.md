@@ -27,7 +27,7 @@ The popups should now be appearing when hovering over elements that have a `[dat
 
 You can pass options to the component to change the default behavior:
 
-```php
+```blade
 <x-pan-analytics::viewer
     :toggle="true"
     :events="['my-event-1', 'my-event-2']"

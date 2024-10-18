@@ -1,7 +1,7 @@
 @props([
     'events' => null,
     'forceAll' => false,
-    'toggle' => false,
+    'toggle' => true,
 ])
 
 @styles
