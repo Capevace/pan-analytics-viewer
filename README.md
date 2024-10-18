@@ -2,6 +2,9 @@
 
 A tiny package to view your [panphp/pan](https://github.com/panphp/pan) analytics directly in the UI where they are triggered!
 
+[example.webm](https://github.com/user-attachments/assets/bcfacc86-d3cb-48dc-8dcc-aaf4675fbf61)
+
+
 ## Installation
 
 ```bash
