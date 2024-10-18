@@ -1,13 +1,20 @@
+<img  alt="Screenshot of the popup" src="https://github.com/user-attachments/assets/3d8142bc-c781-43f7-bb90-741939b7cbd9" style="width: 100%">
+
+<br><br>
+
+
 # `mateffy/pan-analytics-viewer`
 
-A tiny Laravel package to view your [panphp/pan](https://github.com/panphp/pan) analytics directly in the UI where they are triggered!
+### A tiny Laravel package to view your [panphp/pan](https://github.com/panphp/pan) analytics directly in the UI where they are triggered!
+
+<br><br>
+
 
 <details open>
         <summary>Video Example</summary>
         
 [Video Example](https://github.com/user-attachments/assets/69aeac75-91b7-4005-a5f1-5923f3018964)
 
-        
 </details>
 
 <br>
