@@ -54,13 +54,12 @@ The package registers a route for the client to be able to access the data. This
 So, make sure to only let users see this component if they have the necessary permissions.
 
 ```blade
-// Make sure to verify who has access! 
-// Including this component will expose your analytics data!
-
 @if (auth()->user()?->email === 'admin@example.com')
     <x-pan-analytics::viewer />
 @endif
-// or
+
+{{-- or --}}
+
 @if (auth()->user()?->can('view-analytics'))
     <x-pan-analytics::viewer />
 @endif
