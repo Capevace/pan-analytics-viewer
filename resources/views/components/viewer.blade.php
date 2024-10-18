@@ -115,11 +115,17 @@
         return html;
     }
 
+    let button = null;
+
     async function buildPanToggle() {
         let destroyViewer = await initPanViewer();
 
         @if ($toggle)
-        const button = document.createElement('button');
+        if (button) {
+            button.remove();
+        }
+
+        button = document.createElement('button');
         button.textContent = 'Hide Pan Analytics';
         button.classList.add('pan-toggle');
         button.classList.add('inactive');
@@ -190,17 +196,36 @@
 
     let destroyViewer = null;
 
-    window.pan = {
-        async show() {
-            destroyViewer = await buildPanToggle();
-        },
-        hide() {
-            if (destroyViewer) {
-                destroyViewer();
-                destroyViewer = null;
-            }
+    const show = async () => {
+        destroyViewer = await buildPanToggle();
+    };
+    const hide = () => {
+        if (destroyViewer) {
+            destroyViewer();
+            destroyViewer = null;
         }
+    };
+    const refresh = () => {
+        hide();
+        show();
+    };
+
+    window.pan = {
+        show,
+        hide,
+        refresh
     };
 
     window.pan.show();
+
+    if (window.Livewire) {
+        let timeout = null;
+        window.Livewire.hook('morph.updated', () => {
+            if (timeout) {
+                clearTimeout(timeout);
+            }
+
+            timeout = setTimeout(window.pan.refresh, 500);
+        });
+    }
 </script>
