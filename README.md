@@ -59,6 +59,8 @@ The package will automatically detect what events are being tracked on the curre
 
 To fix this, you can either specify the specific `events` you want to show on the page or use the `force-all` option to disable filtering and fetch all events.
 
+<br>
+
 ## Security
 
 The package registers a route for the client to be able to access the data. This route required a valid URL signature to be able to access it, which the `pan-analytics::viewer` component will automatically generate. **If you include this component on a page that is publicly accessible and don't check the user before including the component, anyone can access the data!**
