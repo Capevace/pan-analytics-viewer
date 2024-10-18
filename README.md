@@ -114,4 +114,7 @@ You can change the URL that the analytics are being exposed on by changing the `
 
 ## Changelog
 
-- 1.0.0 - Initial release
+- 1.0.1
+  - Fix: removed livewire specific script inclusion
+- 1.0.0 
+  - Initial release
