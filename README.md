@@ -73,3 +73,7 @@ So, make sure to only let users see this component if they have the necessary pe
     <x-pan-analytics::viewer />
 @endif
 ```
+
+## Changelog
+
+- 1.0.0 - Initial release
