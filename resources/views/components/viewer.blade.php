@@ -1,10 +1,9 @@
 @props([
     'events' => null,
     'forceAll' => false,
-    'toggle' => true,
+    'toggle' => false,
 ])
 
-@styles
 <style>
     .pan-widget-header h3 {
         margin: 0;
@@ -47,14 +46,7 @@
         opacity: 1;
     }
 </style>
-<style id="pan-dynamic-styles">
 
-</style>
-
-@endstyles
-
-@script
-{{-- Tippy.js --}}
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
 <script type="module">
@@ -212,4 +204,3 @@
 
     window.pan.show();
 </script>
-@endscript
