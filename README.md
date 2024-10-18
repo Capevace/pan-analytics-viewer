@@ -1,6 +1,6 @@
 # `mateffy/pan-analytics-viewer`
 
-A tiny package to view your [panphp/pan](https://github.com/panphp/pan) analytics directly in the UI where they are triggered!
+A tiny Laravel package to view your [panphp/pan](https://github.com/panphp/pan) analytics directly in the UI where they are triggered!
 
 <details open>
         <summary>Video Example</summary>
