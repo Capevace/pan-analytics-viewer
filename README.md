@@ -74,6 +74,26 @@ So, make sure to only let users see this component if they have the necessary pe
 @endif
 ```
 
+## Configuration
+
+You can publish the config file with:
+
+```bash
+php artisan vendor:publish --provider="Mateffy\PanAnalyticsViewer\PanAnalyticsViewerServiceProvider" --tag="config"
+```
+
+This is the default configuration:
+
+```php
+return [
+    'endpoint' => env('PAN_ANALYTICS_ENDPOINT', '/pan/viewer'),
+];
+```
+
+### Endpoint
+
+You can change the URL that the analytics are being exposed on by changing the `PAN_ANALYTICS_ENDPOINT` environment variable or customizing the `endpoint` config key. The default URL is `example.com/pan/viewer`.
+
 ## Changelog
 
 - 1.0.0 - Initial release
