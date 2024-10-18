@@ -102,7 +102,7 @@ This is the default configuration:
 
 ```php
 return [
-    'endpoint' => env('PAN_ANALYTICS_ENDPOINT', '/pan/viewer'),
+    'endpoint' => env('PAN_ANALYTICS_ENDPOINT', '/pan/viewer')
 ];
 ```
 
