@@ -26,7 +26,7 @@ To add the popups to your app, all you have to do is include the `pan-analytics:
 
 ```blade
 {{--    Make sure to verify who has access! 
-        Including this component will expose your analytics data! --}}
+        Including this component will expose your analytics data!    --}}
 
 @if (auth()->user()?->email === 'admin@example.com')
     <x-pan-analytics::viewer />
