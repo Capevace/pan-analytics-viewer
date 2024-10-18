@@ -2,7 +2,13 @@
 
 A tiny package to view your [panphp/pan](https://github.com/panphp/pan) analytics directly in the UI where they are triggered!
 
-[example.webm](https://github.com/user-attachments/assets/bcfacc86-d3cb-48dc-8dcc-aaf4675fbf61)
+<details open>
+        <summary>Video Example</summary>
+        
+[Video Example](https://github.com/user-attachments/assets/69aeac75-91b7-4005-a5f1-5923f3018964)
+
+        
+</details>
 
 
 ## Installation
