@@ -51,7 +51,7 @@ You can pass options to the component to change the default behavior:
 |-------------|----------------------------------------------------------------------------------------------|---------|
 | `toggle`    | Whether to show a toggle button to show/hide the popups                                      | `false` |
 | `events`    | Specify the events that should be fetched.                                                   | `null`  |
-| `force-all` | Force all events to get fetched, may be required when dynamically creating tracked elements. | `false` |
+| `force‑all` | Force all events to get fetched, may be required when dynamically creating tracked elements. | `false` |
 
 ### Events
 
@@ -63,9 +63,9 @@ To fix this, you can either specify the specific `events` you want to show on th
 
 ## Security
 
-The package registers a route for the client to be able to access the data. This route required a valid URL signature to be able to access it, which the `pan-analytics::viewer` component will automatically generate. **If you include this component on a page that is publicly accessible and don't check the user before including the component, anyone can access the data!**
+The package registers a route for the client to be able to access the data. This route required a valid URL signature to be able to access it, which the `pan-analytics::viewer` component will automatically generate (signed URLs are valid for 1h). **If you include this component on a page that is publicly accessible and don't check the user before including the component, anyone can access the analytics data!**
 
-So, make sure to only let users see this component if they have the necessary permissions.
+So, make sure to only render this component for users with the necessary permissions.
 
 ```blade
 @if (auth()->user()?->email === 'admin@example.com')
